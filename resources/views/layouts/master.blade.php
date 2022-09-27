@@ -2,12 +2,11 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="Simple Employees App CRUD" />
         <meta name="keywords" contetn="HTML, CSS, JavaScript, Bootstrap, PHP 8, OOP, Laravel 9" />
-        <meta name="author" content="Agnieszka Leśków" mail="" />
-
+        <meta name="author" content="Agnieszka Leśków" mail="agnieszkaleskow@gmail.com" />
 
         <title>@yield('title','Home') - Employees App CRUD</title>
       
@@ -32,13 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                href="{{ url('/about-us') }}">About Us</a></li>
+                                href="{{ route('pages.about') }}">About Us</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                href="{{ url('/') }}">Employees list</a></li>
+                                href="{{ route('employees.list') }}">Employees list</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
                                 href="#">Add a new employee</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                href="{{ url('/contact') }}">Contact</a></li>
+                                href="{{ route('pages.contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +53,7 @@
                     <div class="footer-contact col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">
                             <p class="lead mb-0">
-                                <a href="#" class="nav-link text-white py-1">
+                                <a href="{{ url('/contact') }}" class="nav-link text-white py-1">
                                     We Invite You To Contact Us!
                                 </a>
                                 <a href="{{ url('/') }}" class="nav-link text-uppercase py-1">
@@ -67,7 +66,7 @@
                         <h4 class="text-uppercase mb-4">
                             Employee managment
                         </h4>
-                        <a href="{{ url('/') }}" class="nav-link text-white py-1">
+                        <a href="{{ route('employees.list') }}" class="nav-link text-white py-1">
                            Employees List
                         </a>
                         <a href="#" class="nav-link text-white py-1">
