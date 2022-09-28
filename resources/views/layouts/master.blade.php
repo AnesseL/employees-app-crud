@@ -35,7 +35,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
                                 href="{{ route('employees.list') }}">Employees list</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                href="#">Add a new employee</a></li>
+                                href="{{ route('employees.create') }}">Add a new employee</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white"
                                 href="{{ route('pages.contact') }}">Contact</a></li>
                     </ul>
@@ -69,7 +69,7 @@
                         <a href="{{ route('employees.list') }}" class="nav-link text-white py-1">
                            Employees List
                         </a>
-                        <a href="#" class="nav-link text-white py-1">
+                        <a href="{{ route('employees.create') }}" class="nav-link text-white py-1">
                             Adding New Employees
                         </a>
                         <a href="#" class="nav-link text-white py-1">

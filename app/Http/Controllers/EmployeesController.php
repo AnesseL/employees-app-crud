@@ -12,4 +12,23 @@ class EmployeesController extends Controller
         $employeeslist = Employee::all();
         return view('employees.index', compact('employeeslist'));
     }
+    public function create()
+    {
+        return view('employees.create');
+    }
+    public function store(Request $request)
+    {
+        $employee = new Employee();
+
+        $employee->name = $request->name;
+        $employee->address = $request->address;
+        $employee->email = $request->email;
+        $employee->phone = $request->phone;
+        $employee->pesel = $request->pesel;
+        $employee->date = $request->date;
+
+        $employee->save();
+
+        return redirect('/');
+    }
 }

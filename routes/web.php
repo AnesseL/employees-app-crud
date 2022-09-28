@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [EmployeesController::class, 'index'])->name('employees.list');
+Route::get('/employee-add', [EmployeesController::class, 'create'])->name('employees.create');
+Route::post('/employee-add', [EmployeesController::class, 'store'])->name('employees.store');
 
 Route::get('/about-us', function () {
     return view('pages.about');
