@@ -39,7 +39,7 @@
                         <td scope="col">{{ $employee->date }}</td>
                         <td scope="col">
                             <div class="btn-group">
-                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-primary">Edit</a>
                                 <form action="" method="POST" class="">
                                     <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>

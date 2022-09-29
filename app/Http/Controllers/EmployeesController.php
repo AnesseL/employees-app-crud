@@ -31,4 +31,9 @@ class EmployeesController extends Controller
 
         return redirect('/')->with('message', 'Employee data added correctly');
     }
+    public function edit($id)
+    {
+        $employee = Employee::find($id);
+        return view('employees.edit', compact('employee'));
+    }
 }

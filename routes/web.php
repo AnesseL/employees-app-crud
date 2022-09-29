@@ -18,6 +18,9 @@ Route::get('/', [EmployeesController::class, 'index'])->name('employees.list');
 Route::get('/employee-add', [EmployeesController::class, 'create'])->name('employees.create');
 Route::post('/employee-add', [EmployeesController::class, 'store'])->name('employees.store');
 
+Route::get('/employee-edit/{id}', [EmployeesController::class, 'edit'])->name('employees.edit');
+
+
 Route::get('/about-us', function () {
     return view('pages.about');
 })->name('pages.about');
