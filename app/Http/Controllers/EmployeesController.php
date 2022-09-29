@@ -36,4 +36,18 @@ class EmployeesController extends Controller
         $employee = Employee::find($id);
         return view('employees.edit', compact('employee'));
     }
+    public function update($id, Request $request)
+    {
+        $employee = Employee::find($id);
+        $employee->name = $request->name;
+        $employee->address = $request->address;
+        $employee->email = $request->email;
+        $employee->phone = $request->phone;
+        $employee->pesel = $request->pesel;
+        $employee->date = $request->date;
+
+        $employee->save();
+
+        return redirect('/')->with('message', 'Employee data changed correctly');
+    }
 }

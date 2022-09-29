@@ -6,8 +6,9 @@
             <h1 class="py-5">Edit An Employee {{ $employee->id }}</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form name="setMessage" action="" method="" id="contactForm" novalidate="novalidate">
+                    <form name="setMessage" action="{{ route('employees.edit', $employee->id) }}" method="POST" id="contactForm" novalidate="novalidate">
                         {{ csrf_field() }}
+                        @method('PUT')
                         <!-- Name -->
                         <div class="form-floating mb-3">
                             <input class="form-control" value="{{ $employee->name }}" id="name" name="name" type="text"
@@ -67,7 +68,7 @@
                         <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
-                        <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Add a new employee</button>
+                        <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Save Employee</button>
                     </form>
                 </div>
             </div>
