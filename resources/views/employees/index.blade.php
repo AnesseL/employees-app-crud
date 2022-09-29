@@ -4,7 +4,16 @@
     <section class="container">
         <div class="row justify-content-center">
             <h1 class="py-5">Employees List</h1>
-           
+
+            @if(session()->has('message'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Congratulations!</strong> 
+                {{ session()->get('message') }}!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                </button>
+            </div>
+            @endif
+
             <table class="table table-striped">
                 <thead>
                     <tr class="col">
@@ -29,10 +38,12 @@
                         <td scope="col">{{ $employee->pesel }}</td>
                         <td scope="col">{{ $employee->date }}</td>
                         <td scope="col">
-                            <a href="" class="btn btn-primary d-inline-block">Edit</a>
-                            <form action="" method="POST" class="d-inline-block">
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary">Edit</a>
+                                <form action="" method="POST" class="">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                              </div>                           
                         </td>
                     </tr>
                 </tbody>

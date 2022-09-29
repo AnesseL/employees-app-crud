@@ -29,6 +29,6 @@ class EmployeesController extends Controller
 
         $employee->save();
 
-        return redirect('/');
+        return redirect('/')->with('message', 'Employee data added correctly');
     }
 }
