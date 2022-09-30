@@ -50,4 +50,9 @@ class EmployeesController extends Controller
 
         return redirect('/')->with('message', 'Employee data changed correctly');
     }
+    public function delete($id)
+    {
+        Employee::destroy($id);
+        return redirect('/')->with('message','The Employee has been removed');
+    }
 }

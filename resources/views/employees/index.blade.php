@@ -40,10 +40,12 @@
                         <td scope="col">
                             <div class="btn-group">
                                 <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-primary">Edit</a>
-                                <form action="" method="POST" class="">
+                                <form action="{{ route('employees.delete', $employee->id) }}" method="POST" class="">
+                                    @csrf
+                                    @method('DELETE')
                                     <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>
-                              </div>                           
+                            </div>                           
                         </td>
                     </tr>
                 </tbody>

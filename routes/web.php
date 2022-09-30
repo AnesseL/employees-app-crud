@@ -20,6 +20,7 @@ Route::post('/employee-add', [EmployeesController::class, 'store'])->name('emplo
 
 Route::get('/employee-edit/{id}', [EmployeesController::class, 'edit'])->name('employees.edit');
 Route::put('/employee-edit/{id}', [EmployeesController::class, 'update'])->name('employees.edit');
+Route::delete('/employee-delete/{id}', [EmployeesController::class, 'delete'])->name('employees.delete');
 
 Route::get('/about-us', function () {
     return view('pages.about');
