@@ -1,66 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+---
+# **Employees App CRUD**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Created by [Agnieszka Leśków](https://agnieszkaleskow.pl)
 
-## About Laravel
+---
+## TABLE OF CONTENTS
+* [About Employees App CRUD](#about-employees-app-crud)
+* [License](#license)
+* [Contributing](#contributing)
+* [Technologies used in the project](#technologies-used-in-the-project)
+* [Installation / Setup / Project launch](#installation-setup-project-launch )
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
+## About Employees App CRUD
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Employees App CRUD is a parts web application created in framework Laravel 9.
+Laravel 9 used in my web project made much easier creation tasks CRUD: create, read, update, delete. This tasks was a creative experience, and hastened the performance of this work and easy communication with the database thanks the Eloquent ORM.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
+---
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Employees App CRUD is simple mini app CRUD open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+## Contributing
+This version is demonstrative for showing my skills CRUD please don't to change nothing in my repo but pull requests are welcome because this projekt is for learning. Please don't add anything. Thanks, greating and have fun.
+
+---
+## Technologies used in the project
+
+Project created with:
++ Laravel 9 ( PHP )
++ Bootstrap 5 (HTML5 | CSS3 | JavaScript | Sass)
+
+---
+## Installation / Setup / Project launch 
+
+If you need to, download this repository and see how it is made.
+In order to see how CRUD works, you need to create a local work environment.
+You can use XAMPP (Apache + MySQL).
+To run this project, download it to the local computer. 
+Using Git command then run in the web browser.
+
+1. You need to have installed first, best:
++ Node.js (v16.17.1)
++ Composer (v2.4.1)
++ PHP (v8.1.11)
++ XAMPP (8.1.10 / PHP 8.1.10)
++ Git (v2.38.0)
+
+2. After installing:
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+---
+Have a nice day!
