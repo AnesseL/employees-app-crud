@@ -3,6 +3,8 @@
 
 Created by [Agnieszka Leśków](https://agnieszkaleskow.pl)
 
+This Repository contains simple employees app CRUD in framework Laravel 9 made for demonstration purposes.
+
 ---
 ## TABLE OF CONTENTS
 * [About Employees App CRUD](#about-employees-app-crud)
